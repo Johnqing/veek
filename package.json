@@ -1,0 +1,15 @@
+{
+  "name": "prject",
+  "version": "0.0.1",
+  "description": "ERROR: No README.md file found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "johnqing",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-sass": "^1.1.0"
+  }
+}
