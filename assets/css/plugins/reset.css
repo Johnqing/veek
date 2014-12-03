@@ -27,6 +27,9 @@ button, img, input, object, select, textarea {
   vertical-align: middle;
   resize: none; }
 
+button {
+  border: 0 none; }
+
 input[type=checkbox] {
   vertical-align: text-bottom;
   margin-bottom: 2px; }
@@ -90,10 +93,10 @@ a {
 :focus {
   outline: 0; }
 
-.clearfix {
+.clearfix, .row {
   zoom: 1;
   clear: both; }
-  .clearfix:after {
+  .clearfix:after, .row:after {
     visibility: hidden;
     display: block;
     font-size: 0;

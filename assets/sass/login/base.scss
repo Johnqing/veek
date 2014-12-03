@@ -1,0 +1,83 @@
+@import '../globle/variables';
+@import '../globle/responsive';
+
+html,
+body{
+  background: #e5e9ec;
+  color: $color-def;
+}
+
+#main{
+  padding-top: 58px - 12;
+  padding-bottom: 58px - 12;
+  padding-left: 320px;
+  background: #fff;
+}
+
+#top{
+  margin-top: 130px;
+  height: 67px;
+}
+
+.m-logo{
+  float: left;
+  overflow: hidden;
+  padding-top: 55px;
+  width: 348px;
+  height: 0;
+  @include background($url:'common/logo.png');
+}
+.u-sologn{
+  float: left;
+  margin-top: 20px;
+  margin-left: 27px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.row{
+  margin: 12px 0;
+  height: 41px;
+  .cell-th,
+  .cell-td,
+  input,
+  .ipt-msg{
+    float: left;
+  }
+  .ipt-msg{
+    width: 237px;
+  }
+
+  .cell-th{
+    width: 86px;
+    line-height: 41px;
+    font-size: 14px;
+  }
+  .u-ipt-large,
+  .u-ipt-small{
+    margin-right: 16px;
+  }
+}
+
+$ipt-pd-lr: 5px;
+.u-ipt{
+  border: 1px solid #c1c9cd;
+  padding: 10px $ipt-pd-lr;
+
+  height: 19px;
+
+  line-height: 19px;
+  @include border-radius(2px);
+  &:hover{
+    @include box-shadow(0 0 4px rgba(10,166,153,.75));
+  }
+}
+
+.u-ipt-large{
+  @extend .u-ipt;
+  width: 388 - ($ipt-pd-lr * 2);
+}
+.u-ipt-small{
+  @extend .u-ipt;
+  width: 180 - ($ipt-pd-lr * 2);
+}

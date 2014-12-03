@@ -1,0 +1,11 @@
+.u-btn {
+  display: inline-block;
+  text-align: center; }
+
+.u-btn-gr {
+  width: 122px;
+  height: 40px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #fff;
+  background: transparent url("../../img/common/btn-login.png") no-repeat; }

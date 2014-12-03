@@ -34,6 +34,10 @@ button,img,input,object,select,textarea {
   resize: none
 }
 
+button{
+  border: 0 none;
+}
+
 input[type=checkbox] {
   vertical-align: text-bottom;
   margin-bottom: 2px
@@ -115,7 +119,8 @@ a {
   outline: 0
 }
 // 清楚浮动
-.clearfix{
+.clearfix,
+.row{
 
   zoom: 1;
   clear: both;

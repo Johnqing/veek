@@ -1,0 +1,7 @@
+@import '../globle/variables';
+@import '../globle/responsive';
+
+.m-w{
+  @include center-block;
+  width: 1200px;
+}

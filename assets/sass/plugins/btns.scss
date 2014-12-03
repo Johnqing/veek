@@ -1,0 +1,16 @@
+@import '../globle/variables';
+@import '../globle/responsive';
+
+.u-btn{
+  display: inline-block;
+  text-align: center;
+}
+
+.u-btn-gr{
+  width: 122px;
+  height: 40px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #fff;
+  @include background($url:'common/btn-login.png');
+}
