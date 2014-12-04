@@ -1,6 +1,8 @@
 .u-btn {
   display: inline-block;
   text-align: center; }
+  .u-btn:hover {
+    text-decoration: none; }
 
 .u-btn-gr {
   width: 122px;

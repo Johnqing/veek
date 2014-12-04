@@ -16,7 +16,15 @@ body{
 
 #top{
   margin-top: 130px;
+  margin-bottom: 14px;
   height: 67px;
+  .fr{
+    margin-top: 27px;
+    font-size: 14px;
+    .u-btn{
+      margin-left: 15px;
+    }
+  }
 }
 
 .m-logo{
@@ -36,7 +44,8 @@ body{
 }
 
 .row{
-  margin: 12px 0;
+  $width: 86px;
+  padding: 12px 0;
   height: 41px;
   .cell-th,
   .cell-td,
@@ -49,13 +58,26 @@ body{
   }
 
   .cell-th{
-    width: 86px;
+    width: $width;
     line-height: 41px;
     font-size: 14px;
   }
   .u-ipt-large,
   .u-ipt-small{
     margin-right: 16px;
+  }
+  .m-btn{
+    padding-left: $width;
+    label{
+      margin-right: 20px;
+      a{
+        color: #0aa699;
+      }
+    }
+    .u-checkbox{
+      margin-top: 9px;
+      margin-right: 10px;
+    }
   }
 }
 
@@ -68,7 +90,7 @@ $ipt-pd-lr: 5px;
 
   line-height: 19px;
   @include border-radius(2px);
-  &:hover{
+  &:focus{
     @include box-shadow(0 0 4px rgba(10,166,153,.75));
   }
 }
@@ -80,4 +102,15 @@ $ipt-pd-lr: 5px;
 .u-ipt-small{
   @extend .u-ipt;
   width: 180 - ($ipt-pd-lr * 2);
+}
+
+.u-checkbox{
+  vertical-align: top;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  @include background($url:'common/cb_n.png');
+}
+.u-checkbox-slt{
+  @include background($url:'common/cb_s.png');
 }

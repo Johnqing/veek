@@ -10,7 +10,13 @@ html, body {
 
 #top {
   margin-top: 130px;
+  margin-bottom: 14px;
   height: 67px; }
+  #top .fr {
+    margin-top: 27px;
+    font-size: 14px; }
+    #top .fr .u-btn {
+      margin-left: 15px; }
 
 .m-logo {
   float: left;
@@ -28,7 +34,7 @@ html, body {
   line-height: 1; }
 
 .row {
-  margin: 12px 0;
+  padding: 12px 0;
   height: 41px; }
   .row .cell-th, .row .cell-td, .row input, .row .ipt-msg {
     float: left; }
@@ -40,6 +46,15 @@ html, body {
     font-size: 14px; }
   .row .u-ipt-large, .row .u-ipt-small {
     margin-right: 16px; }
+  .row .m-btn {
+    padding-left: 86px; }
+    .row .m-btn label {
+      margin-right: 20px; }
+      .row .m-btn label a {
+        color: #0aa699; }
+    .row .m-btn .u-checkbox {
+      margin-top: 9px;
+      margin-right: 10px; }
 
 .u-ipt, .u-ipt-large, .u-ipt-small {
   border: 1px solid #c1c9cd;
@@ -50,7 +65,7 @@ html, body {
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   border-radius: 2px; }
-  .u-ipt:hover, .u-ipt-large:hover, .u-ipt-small:hover {
+  .u-ipt:focus, .u-ipt-large:focus, .u-ipt-small:focus {
     -webkit-box-shadow: 0 0 4px rgba(10, 166, 153, 0.75);
     box-shadow: 0 0 4px rgba(10, 166, 153, 0.75); }
 
@@ -59,3 +74,13 @@ html, body {
 
 .u-ipt-small {
   width: 170px; }
+
+.u-checkbox {
+  vertical-align: top;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background: transparent url("../../img/common/cb_n.png") no-repeat; }
+
+.u-checkbox-slt {
+  background: transparent url("../../img/common/cb_s.png") no-repeat; }

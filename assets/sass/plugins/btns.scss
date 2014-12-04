@@ -4,6 +4,9 @@
 .u-btn{
   display: inline-block;
   text-align: center;
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 .u-btn-gr{
