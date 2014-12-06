@@ -17,3 +17,11 @@
   color: #fff;
   @include background($url:'common/btn-login.png');
 }
+
+.btn-grey{
+  width: 129px;
+  height: 28px;
+  line-height: 28px;
+  color: #525965;
+  @include background($url:'common/btn-sms.png');
+}
