@@ -25,3 +25,14 @@
   color: #525965;
   @include background($url:'common/btn-sms.png');
 }
+
+.btn-grey-1{
+  float: left;
+  width: 165px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #fff;
+  @include border-radius(3px);
+  background: #c5ccd0;
+}

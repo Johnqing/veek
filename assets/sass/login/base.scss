@@ -54,7 +54,27 @@ body{
     float: left;
   }
   .ipt-msg{
+    position: relative;
     width: 237px;
+  }
+
+  .u-ipt-msg-online{
+    line-height: 36px;
+  }
+
+  .z-success{
+    .u-i{
+      position: absolute;
+      top: 12px;
+      left: -51px;
+
+    }
+  }
+
+  .z-error{
+    .ipt-msg{
+      color: #f00;
+    }
   }
 
   .cell-th{
@@ -62,6 +82,11 @@ body{
     line-height: 41px;
     font-size: 14px;
   }
+
+  .cell-td{
+   position: relative;
+  }
+
   .u-ipt-large,
   .u-ipt-small{
     margin-right: 16px;
@@ -78,6 +103,32 @@ body{
       margin-top: 9px;
       margin-right: 10px;
     }
+  }
+}
+
+.z-success{
+  .u-i{
+    width: 19px;
+    height: 20px;
+    @include background($url: 'common/suc.png')
+  }
+}
+
+
+.row-sms{
+  padding-left: 86px;
+  .ipt-msg{
+    padding-top: 4px;
+  }
+  .u-i{
+    margin-right: 6px;
+    float: left;
+  }
+  .msg-cnt{
+    font-size: 14px;
+  }
+  .btn-grey-1{
+    margin-right: 6px;
   }
 }
 
@@ -113,4 +164,35 @@ $ipt-pd-lr: 5px;
 }
 .u-checkbox-slt{
   @include background($url:'common/cb_s.png');
+}
+.pwd-lev{
+  position: absolute;
+  bottom: -16px;
+  left: 324px;
+}
+.pwd-lev,
+.pwd-lev-0,
+.pwd-lev-1,
+.pwd-lev-2{
+  width: 63px;
+  height: 9px;
+  background: #b5b5b5;
+}
+
+.pwd-lev-0,
+.pwd-lev-1,
+.pwd-lev-2{
+  background-image: url('../../img/common/pw_lev.png');
+}
+
+
+.pwd-lev-0{
+  width: 21px;
+}
+.pwd-lev-1{
+  width: 42px;
+}
+
+.pwd-lev-2{
+  width: 63px;
 }

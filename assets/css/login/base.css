@@ -39,11 +39,22 @@ html, body {
   .row .cell-th, .row .cell-td, .row input, .row .ipt-msg {
     float: left; }
   .row .ipt-msg {
+    position: relative;
     width: 237px; }
+  .row .u-ipt-msg-online {
+    line-height: 36px; }
+  .row .z-success .u-i {
+    position: absolute;
+    top: 12px;
+    left: -51px; }
+  .row .z-error .ipt-msg {
+    color: #f00; }
   .row .cell-th {
     width: 86px;
     line-height: 41px;
     font-size: 14px; }
+  .row .cell-td {
+    position: relative; }
   .row .u-ipt-large, .row .u-ipt-small {
     margin-right: 16px; }
   .row .m-btn {
@@ -55,6 +66,23 @@ html, body {
     .row .m-btn .u-checkbox {
       margin-top: 9px;
       margin-right: 10px; }
+
+.z-success .u-i {
+  width: 19px;
+  height: 20px;
+  background: transparent url("../../img/common/suc.png") no-repeat; }
+
+.row-sms {
+  padding-left: 86px; }
+  .row-sms .ipt-msg {
+    padding-top: 4px; }
+  .row-sms .u-i {
+    margin-right: 6px;
+    float: left; }
+  .row-sms .msg-cnt {
+    font-size: 14px; }
+  .row-sms .btn-grey-1 {
+    margin-right: 6px; }
 
 .u-ipt, .u-ipt-large, .u-ipt-small {
   border: 1px solid #c1c9cd;
@@ -84,3 +112,25 @@ html, body {
 
 .u-checkbox-slt {
   background: transparent url("../../img/common/cb_s.png") no-repeat; }
+
+.pwd-lev {
+  position: absolute;
+  bottom: -16px;
+  left: 324px; }
+
+.pwd-lev, .pwd-lev-0, .pwd-lev-1, .pwd-lev-2 {
+  width: 63px;
+  height: 9px;
+  background: #b5b5b5; }
+
+.pwd-lev-0, .pwd-lev-1, .pwd-lev-2 {
+  background-image: url('../../img/common/pw_lev.png'); }
+
+.pwd-lev-0 {
+  width: 21px; }
+
+.pwd-lev-1 {
+  width: 42px; }
+
+.pwd-lev-2 {
+  width: 63px; }

@@ -14,7 +14,7 @@ define(['jquery', 'string','form', 'ajson'], function($, str, fm, ajson){
 				// 表单容器
 				box: 'form',
 				prefix: '360pay360',
-				errorWrap: '<div class="m-ipt-err-succ">'+
+				errorWrap: '<div class="ipt-msg">'+
 				'<b class="u-i"></b>'+
 				'<div class="msg-cnt"></div>'+
 				'</div>',
@@ -67,7 +67,7 @@ define(['jquery', 'string','form', 'ajson'], function($, str, fm, ajson){
 					}
 
 					if(!config.handle){
-						ajson(conf);
+						ajson.json(conf);
 						return;
 					}
 					config.handle.call(self, conf);
@@ -161,7 +161,7 @@ define(['jquery', 'string','form', 'ajson'], function($, str, fm, ajson){
 			var self = this;
 			var config = self.config;
 			var item = self.nodes_cache[key];
-			var value = fm.elValue(item).replace(/\s/g, '');
+			var value = fm.elValue(item);
 			var rules = config.rules[key];
 			var result;
 
@@ -327,6 +327,13 @@ define(['jquery', 'string','form', 'ajson'], function($, str, fm, ajson){
 				});
 			}
 
+            if(item.attr('data-lev')){
+                item.on('keyup', function(){
+                    self.reset();
+                    self.check(key, config.isSkipNull);
+                });
+            }
+
 			if(!config.focusCls || (item[0].nodeName.toLowerCase() === 'select' || fm.checkable(item))){
 				return
 			}
@@ -377,20 +384,20 @@ define(['jquery', 'string','form', 'ajson'], function($, str, fm, ajson){
 				var nodeWrap = item.parent();
 				var errMessage = $('[data-validate='+key+']');
 				if(!errMessage.length){
-					//errMessage = $(config.errorWrap);
-					//errMessage.attr('data-validate', key);
-					//$('body').append(errMessage);
 					errMessage = $(config.errorWrap);
 					errMessage.attr('data-validate', key);
-					nodeWrap.after(errMessage);
+					nodeWrap.append(errMessage);
 				}
-				//errMessage.css({
-				//	top: item.offset().top,
-				//	left: nodeWrap.offset().left + nodeWrap.innerWidth()
-				//});
 				var message = type == 'error' ? (self.errorMap[key] || rule.message) : MESSAGES[key][type];
 				message = typeof message == 'function' ? message() : message;
 				errMessage.find('.msg-cnt').text(message || '\n');
+
+                var ht = errMessage.height();
+                if(ht<20){
+                    errMessage.addClass('u-ipt-msg-online');
+                }else{
+                    errMessage.removeClass('u-ipt-msg-online');
+                }
 				errMessage.removeClass('ipt-msg-'+config.successCls + ' ' +'ipt-msg-'+config.focusCls + ' '+'ipt-msg-'+config.errorCls).addClass('ipt-msg-'+config[type+'Cls'] +' ipt-name-'+item.attr('name'));
 				itemParent.removeClass(config.successCls + ' ' +config.focusCls + ' '+config.errorCls).addClass(config[type+'Cls']);
 			}
@@ -493,7 +500,7 @@ define(['jquery', 'string','form', 'ajson'], function($, str, fm, ajson){
 			data = data(el, value);
 		}
 
-		ajson({
+		ajson.json({
 			isNotPop: true,
 			url: param.url,
 			dataType: "json",

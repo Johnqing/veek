@@ -20,70 +20,70 @@
 <div class="m-w">
     <div id="main">
         
-        <div action="/reg" method="post">
+        <div action="/reg" method="post" class="m-fm-box">
             <div class="row">
             <label class="cell-th" for="">用户名</label>
             <div class="cell-td">
-                <input type="text" data-validite="username" class="u-ipt-large"/>
-                <div class="ipt-msg">5-25个字符，一个汉字为2个字符，不可使用空格，推荐使用手机注册。</div>
+                <input type="text" data-form="username" class="u-ipt-large"/>
             </div>
         </div>
 
         <div class="row">
             <label class="cell-th" for="">密码</label>
             <div class="cell-td">
-                <input type="text" data-validite="username" class="u-ipt-large"/>
-                <div class="ipt-msg">5-25个字符，一个汉字为2个字符，不可使用空格，推荐使用手机注册。</div>
+                <input type="text" data-form="pwd" data-lev="1" class="u-ipt-large"/>
+                <div class="pwd-lev hide">
+                    <div class="pwd-lev-0"></div>
+                </div>
             </div>
         </div>
 
         <div class="row">
             <label class="cell-th" for="">确认密码</label>
             <div class="cell-td">
-                <input type="text" data-validite="username" class="u-ipt-large"/>
-                <div class="ipt-msg">确认密码</div>
+                <input type="text" data-form="repwd" class="u-ipt-large"/>
             </div>
         </div>
 
         <div class="row">
             <label class="cell-th" for="">常用邮箱</label>
             <div class="cell-td">
-                <input type="text" data-validite="username" class="u-ipt-large"/>
-                <div class="ipt-msg">5-25个字符，一个汉字为2个字符，不可使用空格，推荐使用手机注册。</div>
+                <input type="text" data-form="email" class="u-ipt-large"/>
             </div>
         </div>
 
         <div class="row">
             <label class="cell-th" for="">手机号码</label>
             <div class="cell-td">
-                <input type="text" data-validite="username" class="u-ipt-large"/>
-                <div class="ipt-msg">5-25个字符，一个汉字为2个字符，不可使用空格，推荐使用手机注册。</div>
+                <input type="text" data-form="mobile" class="u-ipt-large"/>
             </div>
         </div>
-        <div class="row-sms">
-            <button class="u-btn btn-grey">获取免费短信验证码</button>
+        <div class="row-sms clearfix">
+            <button class="u-btn btn-grey btn-grey-1">获取免费短信验证码</button>
+            <div class="ipt-msg z-success">
+                <b class="u-i"></b>
+                <div class="msg-cnt">短信发送成功！</div>
+            </div>
         </div>   
         <div class="row">
             <label class="cell-th" for="">短信验证码</label>
             <div class="cell-td">
-                <input type="text" data-validite="username" class="u-ipt-small"/>
-                <div class="ipt-msg">5-25个字符，一个汉字为2个字符，不可使用空格，推荐使用手机注册。</div>
+                <input type="text" data-form="smscode" class="u-ipt-small"/>
             </div>
         </div>
 
         <div class="row">
             <label class="cell-th" for="">验证码</label>
             <div class="cell-td">
-                <input type="text" data-validite="username" class="u-ipt-small"/>
+                <input type="text" data-form="vcode" class="u-ipt-small"/>
                 <span class="ver_code"><img src="" alt=""/>看不清，换一张</span>
 
-                <div class="ipt-msg">5-25个字符，一个汉字为2个字符，不可使用空格，推荐使用手机注册。</div>
             </div>
         </div>
 
         <div class="row">
             <div class="m-btn">
-                <b class="u-checkbox"><input type="checkbox" class="hide"/></b>
+                <b class="u-checkbox"><input type="checkbox" data-form="agree" class="hide"/></b>
                 <label for="">我已阅读并同意<a href="#">《HiVeek用户注册协议》</a></label>
                 <button class="u-btn u-btn-small u-btn-gr" data-btn="validate">立即注册</button>
             </div>
