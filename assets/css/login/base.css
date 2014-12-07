@@ -218,6 +218,8 @@ html, body {
       text-align: right; }
   #login .u-checkbox {
     margin-top: 1px; }
+  #login .reg-btn {
+    margin-top: 12px; }
 
 .m-ft {
   margin-top: 10px;
