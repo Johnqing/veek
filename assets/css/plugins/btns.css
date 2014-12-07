@@ -5,12 +5,22 @@
     text-decoration: none; }
 
 .u-btn-gr {
-  width: 122px;
-  height: 40px;
-  line-height: 38px;
+  width: 118px;
+  height: 36px;
+  line-height: 36px;
   font-size: 14px;
   color: #fff;
-  background: transparent url("../../img/common/btn-login.png") no-repeat; }
+  background: transparent url("../../img/common/login-btn.png") no-repeat; }
+  .u-btn-gr:hover {
+    background: transparent url("../../img/common/login-btn-active.png") no-repeat; }
+
+.u-btn-white {
+  width: 118px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #000000;
+  background: transparent url("../../img/common/reg-btn.png") no-repeat; }
 
 .btn-grey {
   width: 129px;

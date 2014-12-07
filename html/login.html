@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/combo/base.css"/>
+    <link rel="stylesheet" href="../assets/css/combo/login.css"/>
+</head>
+<body>
+<div class="m-w-mini">
+    <div id="login">
+
+        <div class="m-av">
+            <img src="../assets/img/common/logo1.png" alt="" class="hide"/>
+            <div class="u-img">
+                <img src="" alt=""/>
+            </div>
+        </div>
+
+        <div action="/login" method="post" class="m-fm-box">
+            <div class="u-error"></div>
+            <ul>
+                <li><input type="text" data-form="username" class="login-ipt"/><b class="u-i u-i-user"></b></li>
+                <li><input type="password" data-form="pwd" class="login-ipt login-pwd"/><b class="u-i u-i-pwd"></b></li>
+                <li>
+                    <input type="text" data-form="vcode" class="u-ipt-small login-ipt"/>
+                    <span class="vcode"><img src="../assets/img/demo/vcode.png" alt=""/><b class="u-i u-i-reload"></b></span>
+                </li>
+                <li class="clearfix">
+                    <div class="fl">
+                        <b class="u-checkbox"><input type="checkbox" data-form="agree" class="hide"/></b>
+                        自动登录
+                    </div>
+                    <div class="fr">
+                        <a href="#" class="u-color">忘记密码？</a>
+                    </div>
+                </li>
+                <li class="m-btn">
+                    <button class="u-btn u-btn-small u-btn-gr" data-btn="login">登录</button>
+                </li>
+                <li class="m-btn">
+                    <button class="u-btn u-btn-small u-btn-white" data-btn="login">注册</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="m-w">
+    <div class="m-ft">Copyright © HiVeek All Rights Reserved</div>
+</div>
+
+<script src="../assets/bower_components/requirejs/require.js" data-main="../assets/js/app/login.js"></script>
+</body>
+</html>

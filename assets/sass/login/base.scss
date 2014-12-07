@@ -196,3 +196,120 @@ $ipt-pd-lr: 5px;
 .pwd-lev-2{
   width: 63px;
 }
+
+#login{
+  margin-top: 244px;
+  padding: 67px 0;
+  @include border-radius(4px);
+  background-color: #fff;
+  .m-av{
+    position: relative;
+    margin-bottom: 87px;
+    text-align: center;
+    height: 55px;
+
+    .u-img{
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      margin-left: -67px;
+
+      width: 135px;
+      height: 135px;
+
+      @include background($url: 'common/av_bg.png');
+    }
+
+  }
+  .m-fm-box{
+    position: relative;
+    ul{
+      margin: 0 auto;
+      width: 401px;
+    }
+    li{
+      position: relative;
+      margin-bottom: 35px;
+      font-size: 14px;
+    }
+
+    .u-error{
+      position: absolute;
+      top: -33px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: #a60a0a;
+    }
+
+    .login-ipt{
+      border: 1px solid #d8dbdd;
+      padding: 10px;
+      padding-right: 41px;
+      width: 348px;
+      @include border-radius(3px);
+
+      &:focus{
+        @include box-shadow(0 0 4px rgba(10,166,153,.75));
+      }
+    }
+
+    .login-pwd {
+      color: #0a9f93;
+    }
+
+
+    .u-ipt-small{
+      width: 170px;
+      padding-right: 10px;
+    }
+
+    .vcode{
+      margin-left: 14px;
+    }
+    .ipt-msg{
+      display: none;
+    }
+
+    .z-error{
+      input{
+        @include box-shadow(0 0 4px rgba(166,10,10,.75));
+      }
+    }
+
+    .u-i{
+      position: absolute;
+      top: 1px;
+      left: 361px;
+      width: 41px;
+      height: 35px;
+    }
+    .u-i-user{
+      @include background($url: 'common/login-user.png')
+    }
+    .u-i-pwd{
+      @include background($url: 'common/login-pwd.png')
+    }
+    .u-i-reload{
+      top: 14px;
+      left: 378px;
+      width: 15px;
+      height: 14px;
+      @include background($url: 'common/reload.png')
+    }
+
+    .u-color{
+      color: #0090d9;
+    }
+    .m-btn{
+      text-align: right;
+    }
+  }
+}
+
+.m-ft{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #b4b6b8;
+}

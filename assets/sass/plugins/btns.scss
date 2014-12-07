@@ -10,12 +10,23 @@
 }
 
 .u-btn-gr{
-  width: 122px;
-  height: 40px;
-  line-height: 38px;
+  width: 118px;
+  height: 36px;
+  line-height: 36px;
   font-size: 14px;
   color: #fff;
-  @include background($url:'common/btn-login.png');
+  @include background($url:'common/login-btn.png');
+  &:hover{
+    @include background($url:'common/login-btn-active.png');
+  }
+}
+.u-btn-white{
+  width: 118px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #000000;
+  @include background($url:'common/reg-btn.png');
 }
 
 .btn-grey{
