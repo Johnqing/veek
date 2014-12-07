@@ -64,7 +64,7 @@ html, body {
       .row .m-btn label a {
         color: #0aa699; }
     .row .m-btn .u-checkbox {
-      margin-top: 9px;
+      margin-top: 7px;
       margin-right: 10px; }
 
 .z-success .u-i {
@@ -216,6 +216,8 @@ html, body {
       color: #0090d9; }
     #login .m-fm-box .m-btn {
       text-align: right; }
+  #login .u-checkbox {
+    margin-top: 1px; }
 
 .m-ft {
   margin-top: 10px;
