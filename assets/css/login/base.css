@@ -66,6 +66,8 @@ html, body {
     .row .m-btn .u-checkbox {
       margin-top: 7px;
       margin-right: 10px; }
+  .row .ver_code img {
+    margin-right: 15px; }
 
 .z-success .u-i {
   width: 19px;
@@ -177,6 +179,7 @@ html, body {
       padding: 10px;
       padding-right: 41px;
       width: 348px;
+      height: 15px;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       -ms-border-radius: 3px;
@@ -226,3 +229,6 @@ html, body {
   padding-bottom: 10px;
   text-align: center;
   color: #b4b6b8; }
+
+.ie7 #login .m-fm-box .u-i-user {
+  top: 2px; }

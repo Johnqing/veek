@@ -104,6 +104,12 @@ body{
       margin-right: 10px;
     }
   }
+
+  .ver_code{
+    img{
+      margin-right: 15px;
+    }
+  }
 }
 
 .z-success{
@@ -247,6 +253,7 @@ $ipt-pd-lr: 5px;
       padding: 10px;
       padding-right: 41px;
       width: 348px;
+      height: 15px;
       @include border-radius(3px);
 
       &:focus{
@@ -318,4 +325,10 @@ $ipt-pd-lr: 5px;
   padding-bottom: 10px;
   text-align: center;
   color: #b4b6b8;
+}
+
+.ie7{
+  #login .m-fm-box .u-i-user{
+    top: 2px;
+  }
 }
