@@ -231,5 +231,15 @@ html, body {
   text-align: center;
   color: #b4b6b8; }
 
-.ie7 #login .m-fm-box .u-i-user {
+.ie7 .m-fm-box .u-checkbox {
+  margin-top: 9px; }
+.ie7 #login .m-fm-box .u-i-user, .ie7 #login .m-fm-box .u-i-pwd {
   top: 2px; }
+.ie7 #login .u-checkbox {
+  margin-top: 0; }
+
+.ie8 .m-fm-box .u-checkbox {
+  margin-top: 6px; }
+
+.ie8 #login .u-checkbox, .ie9 #login .u-checkbox {
+  margin-top: 2px; }

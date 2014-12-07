@@ -329,7 +329,37 @@ $ipt-pd-lr: 5px;
 }
 
 .ie7{
-  #login .m-fm-box .u-i-user{
-    top: 2px;
+  .m-fm-box{
+    .u-checkbox{
+      margin-top: 9px;
+    }
+  }
+  #login {
+    .m-fm-box{
+      .u-i-user,
+      .u-i-pwd{
+        top: 2px;
+      }
+    }
+    .u-checkbox{
+      margin-top: 0;
+    }
+  }
+}
+
+.ie8{
+  .m-fm-box{
+    .u-checkbox{
+      margin-top: 6px;
+    }
+  }
+}
+
+.ie8,.ie9{
+
+  #login {
+    .u-checkbox{
+      margin-top: 2px;
+    }
   }
 }
