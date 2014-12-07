@@ -139,7 +139,7 @@ html, body {
 
 #login {
   margin-top: 244px;
-  padding: 67px 0;
+  padding: 67px 0 45px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -218,6 +218,7 @@ html, body {
     #login .m-fm-box .u-color {
       color: #0090d9; }
     #login .m-fm-box .m-btn {
+      margin-bottom: 0;
       text-align: right; }
   #login .u-checkbox {
     margin-top: 1px; }
