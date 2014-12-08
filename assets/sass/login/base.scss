@@ -363,3 +363,23 @@ $ipt-pd-lr: 5px;
     }
   }
 }
+
+.out_box{
+  border:1px solid #ccc;
+  background:#fff;
+  font:12px/20px Tahoma;
+}
+.list_box{
+  border-bottom:1px solid #eee;
+  padding:0 5px;
+  cursor:pointer
+}
+.focus_box{
+  border-bottom:1px solid #eee;
+  padding:0 5px;
+  cursor:pointer;
+  background:#f0f3f9;
+}
+.mark_box{
+  color:#c00;
+}

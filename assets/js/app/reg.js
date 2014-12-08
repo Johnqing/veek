@@ -5,7 +5,17 @@ require.config({
     }
 });
 
-require(['jquery', 'validate', 'validData'], function($, valid, validData){
+require(['jquery', 'validate', 'validData', 'mailAutoComplete'], function($, valid, validData, mailAutoComplete){
+
+    mailAutoComplete.init($('[data-form="email"]'), {
+        boxClass: "out_box", 
+        listClass: "list_box", 
+        focusClass: "focus_box",
+        markCalss: "mark_box",
+        autoClass: false,
+        textHint: true,
+        hintText: "请输入邮箱地址"
+    });
 
     $('.u-checkbox').on('click', function(){
         var cls = 'u-checkbox-slt';

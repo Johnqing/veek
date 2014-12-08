@@ -5,8 +5,7 @@ require.config({
     }
 });
 
-require(['jquery'], function($){
-
+require(['jquery', 'placeholder'], function($, placeholder){
     $('.u-checkbox').on('click', function(){
         var cls = 'u-checkbox-slt';
         if($(this).hasClass(cls)){
@@ -105,6 +104,13 @@ require(['jquery'], function($){
             check($('[data-form='+i+']'));
         }
 
+    });
+
+
+    placeholder.init($('[placeholder]'), {
+        labelMode: true,
+        labelAlpha: true,
+        labelAcross: true
     });
 
 });
